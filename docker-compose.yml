@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  baza-vpn:
+    image: postgres:13
+    container_name: serwer_vpn_agh
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: tajnehaslo123
+      POSTGRES_DB: VPN_db
+    ports:
+      - "5432:5432"
